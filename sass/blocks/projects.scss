@@ -1,0 +1,65 @@
+.projects {
+    padding: 20px;
+    display: none;
+
+    @media ($tablet-widths) {
+        padding: 0;
+        padding-top: 20px;
+    }
+
+    &__wrapper {
+        @media ($tablet-widths) {
+            padding: 0;
+            padding-top: 20px;
+            @include container;
+        }
+    }
+
+    &__list {
+
+    }
+
+    &__item {
+        min-height: 90px;
+        border-bottom: 1px solid;
+        margin-bottom: 40px;
+    }
+
+    &__name-link {
+        padding: 15px;
+        display: block;
+        color: black;
+        font-weight: bold;
+        font-size: 22px;
+        text-align: left;
+        margin-bottom: 10px;
+
+        @media ($tablet-widths) {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+    
+        @media ($desktop-widths) {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        &:hover {
+            background-color: #6abfbf;
+        }
+    }
+    
+    &__description {
+        font-size: 14px;
+        margin-bottom: 30px;
+        padding: 15px;
+
+        @media ($tablet-widths) {
+            font-size: 20px;
+        }
+    
+        @media ($desktop-widths) {
+            font-size: 24px;
+        }
+    }
+}

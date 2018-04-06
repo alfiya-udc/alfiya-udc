@@ -1,0 +1,33 @@
+/*моя биография поподробнее*/
+.button {
+    text-transform: uppercase;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid black;
+        
+    @media (min-width: 768px) {
+        font-size: 16px;
+
+    }
+    
+    @media (min-width: 1200px) {
+        font-size: 18px;
+    }
+    
+    &:hover {
+        background-color: black;
+        color: white;
+        transition: 0.4s;
+    }
+
+    &:active {
+        background-color: black;
+        color: rgb(197, 197, 197);
+    }
+
+    &:focus {
+        background-color: black;
+        color: rgb(197, 197, 197);
+    }
+}
+

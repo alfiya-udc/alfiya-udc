@@ -1,0 +1,18 @@
+@mixin container() {
+    width: auto;
+    
+    @media ($tablet-widths) {
+        width: 86%;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    @media ($desktop-widths) {
+        width: 91%;
+        max-width: 1050px;
+        margin: 0 auto;
+    }
+
+
+
+}

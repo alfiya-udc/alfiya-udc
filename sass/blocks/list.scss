@@ -1,0 +1,78 @@
+/*list of the skills*/
+.list {
+    
+    margin: 0 auto;
+
+    @media ($tablet-widths) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    @media ($desktop-widths) {
+        width: 85%;
+    }
+        
+    &__item {
+        min-height: 100px;
+        margin-bottom: 30px;
+
+        @media ($tablet-widths) {
+            width:50%;
+            margin-bottom: 50px;
+        }
+    
+        @media ($desktop-widths) {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__icon {
+        width:45px;
+        height:45px;
+        font-size: 40px;
+        color: rgb(109, 0, 0);
+        opacity:0.7;
+        background-size: cover;
+        display: block;
+
+        &--astronaut {
+            background-image: url("../img/icons/astronaut.svg");
+        }
+
+        &--study {
+            background-image: url("../img/icons/study.svg");
+        }
+
+        &--heart {
+            background-image: url("../img/icons/heart.svg");
+        }
+
+        &--yin-yang {
+            background-image: url("../img/icons/yin-yang.svg");
+        }
+
+        &--tasks {
+            background-image: url("../img/icons/tasks.svg");
+        }
+
+        &--baby {
+            background-image: url("../img/icons/baby.svg");
+        }
+    }
+
+
+    &__text {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    @media ($tablet-widths) {
+
+    }
+
+    @media ($desktop-widths) {
+        
+    }
+}

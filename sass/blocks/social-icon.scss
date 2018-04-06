@@ -1,0 +1,41 @@
+.social-icon {
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    background-size: cover;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.8rem;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+
+    &--gh {
+        background-image: url("../img/social/gh.svg");
+    }
+
+    &--fb {
+        background-image: url("../img/social/fb.svg");
+    }
+
+    &--vk {
+        background-image: url("../img/social/vk.svg");
+    }
+
+    &--in {
+        background-image: url("../img/social/in.svg");
+    }
+
+    
+@media ($tablet-widths) {
+
+}
+
+@media ($desktop-widths) {
+    
+}
+
+
+}

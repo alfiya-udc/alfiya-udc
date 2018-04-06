@@ -1,0 +1,109 @@
+.info {
+    width:100%;
+    line-height: 1.5;
+    padding: 20px;
+    padding-top: 40px;
+
+    @media ($tablet-widths) {
+        padding: 0;
+        padding-top: 40px;
+    }
+
+    @media ($desktop-widths) {
+        
+    }
+
+    &__wrapper {
+        
+        @include container;
+       
+        @media ($tablet-widths) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__header {
+        font-size: 24px;
+        text-align: left;
+        margin-bottom: 20px;
+
+        @media ($tablet-widths) {
+            font-size: 30px;
+            margin-bottom: 40px;
+            flex-basis: 100%;
+        }
+    
+        @media ($desktop-widths) {
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__column {
+        @media ($tablet-widths) {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: stretch;
+            align-content: stretch;
+        }
+
+        @media ($desktop-widths) {
+        
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+        margin-bottom: 30px;
+        @media ($tablet-widths) {
+            font-size: 20px;
+        }
+    
+        @media ($desktop-widths) {
+            font-size: 24px;
+        }
+    }
+
+    &__advantages-list {
+        font-size: 14px;
+        margin-bottom: 30px;
+
+        @media ($tablet-widths) {
+            font-size: 20px;
+        }
+    
+        @media ($desktop-widths) {
+            font-size: 24px;
+        }
+    }
+
+    &__foto {
+
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        
+        @media ($tablet-widths) {
+            padding-left: 20px;
+        }
+    
+        @media ($desktop-widths) {
+            
+        }
+            
+    }
+    
+    @media ($tablet-widths) {
+
+    }
+
+    @media ($desktop-widths) {
+        
+    }
+}

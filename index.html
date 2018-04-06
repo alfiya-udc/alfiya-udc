@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Front-end developer Alfiya</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="page-header__logo">
+        <a href="#">
+          <img alt="Альфиюшка" src="img/logo1.svg" width="180">
+        </a>
+      </div>
+      
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle lang-toggle">Открыть меню</button>
+        
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link main-nav__link--active">
+                <!-- <i class="main-nav__icon"></i> -->
+                <span class="main-nav__text">Русский</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                <!-- <i class="main-nav__icon"></i> -->
+                <span class="main-nav__text">English</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                  <!-- <i class="main-nav__icon"></i> -->
+                  <span class="main-nav__text">Español</span>
+                </a>
+            </li>
+          </ul>
+        
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="presentation">
+      <div class="presentation__wrapper">
+        <h1 class="presentation__name">Альфия<br>Ахметзянова</h1>
+        <p class="presentation__object">
+          Этот сайт я сделала сама для моих потенциальных работодателей. Здесь вы найдете информацию обо мне, примеры моего кода, а также ссылки на проекты, в которых я участвовала. 
+        </p>
+      </div>
+    </section>
+
+    <section class="section-toggler">
+      <div class="section-toggler__wrapper" id="js-tabs">
+        <button class="section-toggler__button section-toggler__button--left section-toggler__button--active js-tab-header">
+          Обо мне      
+        </button>
+        <button class="section-toggler__button section-toggler__button--right js-tab-header">
+            Мои проекты      
+        </button>
+      </div>
+    </section>
+    
+    <section class="info js-tab-panel">
+      <div class="info__wrapper">
+        
+        <h2 class="info__header">
+          В одно прекрасное утро
+        </h2>
+        
+        <article class="info__column">
+          <p class="info__text">
+            В одно прекрасное утро я проснулась и поняла, что хочу заниматься программированием. Я посвятила год его изучению, и вот результаты.
+          </p>
+
+          <dl class="info__advantages-list">
+            <dt>На чём я пишу:</dt>
+              <dd>HTML, CSS, Javascript.</dd>
+            <dt>Что я более или менее знаю: </dt>
+              <dd>Си.</dd>
+            <dt>О чем я имею представление:</dt>
+              <dd>Webpack, React.js, Node.js.</dd>
+            <dt>Что я реально использую в работе: </dt>
+              <dd>git, npm, Visual Code</dd>
+          </dl>
+
+          <p class="info__text">
+            Моя цель - получить должность фронтэнд-разработчика в компании, которая в обмен на мою заботу и мои знания предоставит мне аналогичную заботу и денежное вознаграждение.
+          </p>
+         
+        </article>
+
+        <article class="info__column">
+          <div class="info__foto">
+            <picture>
+              <source media="(min-width:1200px srcset='img/foto1200.jpg 1x, img/foto2400.jpg 2x')">
+              <source media="(min-width:768px srcset='img/foto0800.jpg 1x, img/foto1800.jpg 2x')">
+              <img alt="Моя фотка" src="img/foto0400.jpg" srcset="img/foto0800.jpg 2x">
+            </picture>
+          </div>
+          <button class="button js-info-switcher">
+            Моя биография поподробнее
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects js-tab-panel">
+      
+      <div class="projects__wrapper">
+        <ul class="projects__list">
+          <li class="projects__item">
+            <a target="_blank" class="projects__name-link" href="https://github.com/alfiya-udc/js_20171116">Учебный проект с курсов Javascript</a>
+            <p class="projects__description">Цель - создать веб-приложение в виде чата. Проект не мой личный, его делали группой, а точнее - преподаватель, и мы лишь время от времени пуллреквестили ему домашние задания по проекту.</p>
+          </li>
+          <li class="projects__item">
+            <a target="_blank" class="projects__name-link" href="https://github.com/alfiya-udc/LearnJSApp">Веб-приложение для обучений детей JS</a>
+            <p class="projects__description">Сейчас я как раз работаю над этим приложением.</p>
+          </li>
+          <li class="projects__item">
+            <a target="_blank" class="projects__name-link" href="https://github.com/alfiya-udc/project2801">Сайт-портфолио</a>
+            <p class="projects__description">Собственно сайт, на котором вы сейчас находитесь, тоже сделан мной. На гитхабе есть его код.</p>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="modal">
+
+        <div class="modal__content">
+          <span class="modal__close">&times;</span>
+          <h2 class="modal__header">Моя биография поподробнее</h2>
+          <article class="modal__info">
+            <p class="modal__paragraph">С 2005 по 2009 год я училась в МГУ на филологическом факультете (специальность - румынский язык).
+            Потом год с репетитором до 2010 года я изучала испанский язык с целью перевестись в Казанский Университет.
+            В 2010 году я успешно сдала академическую разницу и уже в 2013 закончила КГУ по специальности "Испанский язык и литература".
+            В Казани никакой работы, где я бы могла применить испанский язык, не было. Поэтому с 2013 по 2017 год я работала в московской школе 1252 учителем испанского языка.
+            </p>
+            <p class="modal__paragraph">С 2016 по 2018 годы училась на следующих курсах официально, с сертификатами и наставниками, как положено: </p>
+            <ul class="modal__list">
+              <li>Основы программирования ("Специалист")</li>
+              <li>Программирование на Си ("Специалист")</li>
+              <li>Javascript. DOM. Интерфейсы (javascript.ru)</li>
+            </ul>
+                       
+            <p class="modal__paragraph">
+              Параллельно я самостоятельно изучала HTML, CSS и базовые алгоритмы.<br>
+              Имею некоторое представление о Node.js, React.js, шаблонизаторе Pug, Webpack, Gulp.<br>
+              Цель стать программистом я поставила еще в 2016 году. В 2017 году я переехала в Сибирь, чтобы ничто не отвлекало от ее достижения.
+            </p>
+            <p class="modal__paragraph">В принципе, если вы читаете этот раздел, то, значит, js сработал!</p>
+            <p class="modal__paragraph">
+              В свободное время я читаю, уже не художественную литературу, а больше публицистику, чтобы быть в курсе всего, что происходит. Мне нравится фотографировать, петь и программировать. Пока я не нашла работу, это мое основное хобби. Я в совершенстве владею испанским языком, английским же не так круто, но достаточно для чтения документации.
+            </p>
+            
+            
+            
+          </article>
+        </div>
+
+    </section>
+
+    <section class="skills">
+      <div class="skills__wrapper">
+        <h2 class="skills__header">
+          Что точно можно от меня ожидать
+        </h2>
+        <ul class="skills__list list">
+          <li class="list__item">
+            <i class="list__icon--astronaut list__icon"></i>
+            <p class="list__text">Люблю всё новое и интересное</p>
+          </li>
+
+          <li class="list__item">
+            <i class="list__icon--study list__icon"></i>
+            <p class="list__text">Обучаюсь глубоко и вдумчиво</p>
+          </li>
+
+          <li class="list__item ">
+            <i class="list__icon--heart list__icon"></i>
+            <p class="list__text">Люблю Javascript</p>
+          </li>
+
+          <li class="list__item">
+            <i class="list__icon--yin-yang list__icon"></i>
+            <p class="list__text">Упрощаю и оптимизирую</p>
+          </li>
+
+          <li class="list__item">
+            <i class="list__icon--tasks list__icon"></i>
+            <p class="list__text">Суперответственная</p>
+          </li>
+
+          <li class="list__item">
+              <i class="list__icon--baby list__icon"></i>
+              <p class="list__text">И немного весёлая ;)</p>
+          </li>
+        </ul>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <p class="page-footer__social">
+        <span class="social-links">
+          <a class="social-icon social-icon--gh" href="https://github.com/alfiya-udc">Github</a>
+          <a class="social-icon social-icon--fb" href="https://www.facebook.com/fiyusha">Fb</a>
+          <a class="social-icon social-icon--vk" href="https://vk.com/algounico">Vk</a>
+          <a class="social-icon social-icon--in" href="https://www.instagram.com/larunablanca/">Insta</a>
+        </span>
+      </p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

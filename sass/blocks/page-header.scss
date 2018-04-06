@@ -1,0 +1,38 @@
+.page-header {
+    background-color: black;
+    color: white;
+    min-height:80px;
+    width:100%;
+
+    &__wrapper {
+
+        padding-top: 20px;
+
+        @include container;
+
+        @media ($tablet-widths) {
+            
+            padding-top: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 80px;
+        }
+    
+        @media ($desktop-widths) {
+            min-height: 90px;
+        }
+    }
+
+    &__logo {
+        text-align: center;
+
+        img {
+            width: 180px;
+        }
+    }
+
+    
+
+}

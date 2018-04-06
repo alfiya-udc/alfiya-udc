@@ -1,0 +1,63 @@
+.presentation {
+    min-height: 300px;
+    width: 100%;
+    padding-top: 20px;
+    line-height: 1.5;
+    
+    @media ($tablet-widths) {
+        padding-top: 50px;
+        background-image: url("../img/cuadros2.svg");
+        background-size: 8%;
+    }
+
+    @media ($desktop-widths) {
+        padding-top: 70px;
+    }
+
+    &__wrapper {
+        @include container;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+                
+    &__name {
+        width: 100%;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 70px;
+
+        @media ($tablet-widths) {
+            font-size: 40px;
+            margin-bottom: 150px;
+        }
+    
+        @media ($desktop-widths) {
+            font-size: 50px;
+            margin-bottom: 180px;           
+        }
+    }
+
+    &__object {
+        max-width: 550px;
+        font-size: 16px;
+        text-align: right;
+        margin-bottom: 45px;        
+        padding-left: 20px;
+        padding-right: 20px;
+
+        @media ($tablet-widths) {
+            font-size: 20px;
+            margin-bottom: 60px;
+            width: 60%;
+        }
+    
+        @media ($desktop-widths) {
+            font-size: 24px;
+            margin-bottom: 75px;
+        }
+    }
+}
