@@ -4,7 +4,9 @@
   "description": "mi proyecto",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "start": "gulp serve"
   },
   "repository": {
     "type": "git",
@@ -17,7 +19,18 @@
   },
   "homepage": "https://github.com/alfiya-udc/project2801#readme",
   "devDependencies": {
+    "autoprefixer": "^8.2.0",
+    "browser-sync": "^2.23.6",
+    "css-mqpacker": "^6.0.2",
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
-  }
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {}
 }

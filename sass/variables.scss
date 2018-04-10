@@ -1,9 +1,5 @@
-$colored: #e4f0fc;
-
-$dark: #025277;
-
 $mobile-widths-only: unquote($string: "max-widths: 767px");
 
-$tablet-widths: unquote("min-width: 768px");
+$tablet-widths: unquote($string: "min-width: 768px");
 
 $desktop-widths: unquote($string: "min-width: 1200px");

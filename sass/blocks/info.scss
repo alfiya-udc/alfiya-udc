@@ -9,10 +9,6 @@
         padding-top: 40px;
     }
 
-    @media ($desktop-widths) {
-        
-    }
-
     &__wrapper {
         
         @include container;
@@ -52,10 +48,6 @@
             align-items: stretch;
             align-content: stretch;
         }
-
-        @media ($desktop-widths) {
-        
-        }
     }
 
     &__text {
@@ -92,18 +84,5 @@
         @media ($tablet-widths) {
             padding-left: 20px;
         }
-    
-        @media ($desktop-widths) {
-            
-        }
-            
-    }
-    
-    @media ($tablet-widths) {
-
-    }
-
-    @media ($desktop-widths) {
-        
     }
 }
