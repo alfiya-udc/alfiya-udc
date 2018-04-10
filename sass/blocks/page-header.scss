@@ -11,7 +11,6 @@
         @include container;
 
         @media ($tablet-widths) {
-            
             padding-top: 0;
             display: flex;
             flex-direction: row;
@@ -32,7 +31,4 @@
             width: 180px;
         }
     }
-
-    
-
 }

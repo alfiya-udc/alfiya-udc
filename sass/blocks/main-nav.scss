@@ -69,16 +69,6 @@
             color: black;
             border-color: black;
         }
-
-        &:visited {
-            
-        }
-
-        /* &--active {
-            background-color: white;
-            color: black;
-        } */
-    
     }
 
     &__text {
@@ -106,7 +96,5 @@
         @media ($tablet-widths) {
             display: none;
         }
-    
     } 
-
 }

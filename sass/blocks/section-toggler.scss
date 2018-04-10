@@ -31,10 +31,6 @@
         font-size: 18px;
         font-weight: bold;
         cursor: pointer;
-
-        &--hidden {
-
-        }
         
         &:hover {
             background-color: #6abfbf;
@@ -60,23 +56,4 @@
             }
         }
     }
-@keyframes lift {
-    0% {
-        opacity: 0;
-        transform: translate3d(0.75%, 0);
-    }
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
-    
-@media ($tablet-widths) {
-
-}
-
-@media ($desktop-widths) {
-    
-}
-
 }
