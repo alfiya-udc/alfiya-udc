@@ -4,7 +4,6 @@ let button = document.querySelector(".js-info-switcher");
 let modalWindow = document.querySelector (".modal");
 let closeButton = document.querySelector(".modal__close");
 
-
 function showModal () {
     modalWindow.style.display = "block";
 }
