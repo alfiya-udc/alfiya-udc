@@ -20,28 +20,28 @@
       </div>
       
       <nav class="main-nav main-nav--closed">
-        <button class="main-nav__toggle lang-toggle">Открыть меню</button>
+        <button class="main-nav__toggle js-toggle-button" type="button"><span></span></button>
         
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link main-nav__link--active">
+        <ul class="main-nav__list js-toggle-menu">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link main-nav__link--active">
+              <!-- <i class="main-nav__icon"></i> -->
+              <span class="main-nav__text">Русский</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              <!-- <i class="main-nav__icon"></i> -->
+              <span class="main-nav__text">English</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
                 <!-- <i class="main-nav__icon"></i> -->
-                <span class="main-nav__text">Русский</span>
+                <span class="main-nav__text">Español</span>
               </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">
-                <!-- <i class="main-nav__icon"></i> -->
-                <span class="main-nav__text">English</span>
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">
-                  <!-- <i class="main-nav__icon"></i> -->
-                  <span class="main-nav__text">Español</span>
-                </a>
-            </li>
-          </ul>
+          </li>
+        </ul>
         
       </nav>
     </div>
@@ -154,7 +154,6 @@
             <p class="modal__paragraph">
               Параллельно я самостоятельно изучала HTML, CSS и базовые алгоритмы.<br>
               Имею некоторое представление о Node.js, React.js, шаблонизаторе Pug, Webpack, Gulp.<br>
-              Цель стать программистом я поставила еще в 2016 году. В 2017 году я переехала в Сибирь, чтобы ничто не отвлекало от ее достижения.
             </p>
             <p class="modal__paragraph">В принципе, если вы читаете этот раздел, то, значит, js сработал!</p>
             <p class="modal__paragraph">
@@ -223,6 +222,10 @@
       </p>
     </div>
   </footer>
+  <button class="button-up js-scroll-top">
+    <span class="button-up__arrow"></span>
+  </button> 
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alfiya-udc/project2801.git"
+    "url": "git+https://github.com/alfiya-udc/alfiya-udc.git"
   },
   "author": "Alfiya",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alfiya-udc/project2801/issues"
+    "url": "https://github.com/alfiya-udc/alfiya-udc/issues"
   },
-  "homepage": "https://github.com/alfiya-udc/project2801#readme",
+  "homepage": "https://github.com/alfiya-udc/alfiya-udc#readme",
   "devDependencies": {
     "autoprefixer": "^8.4.1",
     "browser-sync": "^2.23.7",

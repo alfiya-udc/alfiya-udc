@@ -1,7 +1,10 @@
 build/
 node_modules/
+img/archive
+img/archive2
 .DS_Store
 Thumbs.db
+.vscode/
 .idea
 *.sublime*
 *.log

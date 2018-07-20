@@ -1,0 +1,48 @@
+.button-up {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: fixed;
+    left: 30px;
+    bottom: 45px;
+    opacity: 0;
+    padding: 1px 0 0 0;   
+
+    @media ($tablet-widths) {
+        border-width: 2px;
+        width: 45px;
+        height: 45px;
+        left: 30px;
+        bottom: 75px;
+        padding: 7px 0 0 0;
+    }      
+
+    @media ($desktop-widths) {
+        left: 20px;
+    }
+        
+    &__arrow {
+        border-color: transparent #000000 #000000 transparent;
+        border-style: solid;
+        border-width: 1px;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(-135deg);
+        @media ($tablet-widths) {
+            padding: 4px;
+            border-width: 2px;
+        }
+    }
+
+    &:hover, &:active {
+        border-color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.4);
+        transition: 0.3s;
+        .button-up__arrow {
+            border-color: transparent #ffffff #ffffff transparent;
+            transition: 0.3s;
+        }
+    }
+}

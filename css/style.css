@@ -22,7 +22,7 @@ p, h2, h1 {
 
 a {
   text-decoration: none;
-  color: transparent;
+  color: rgba(0, 0, 0, 0);
   transition: 0.4s; }
 
 img {
@@ -49,9 +49,11 @@ picture {
   width: 100%; }
   .page-header__wrapper {
     padding-top: 20px;
-    width: auto; }
+    width: auto;
+    text-align: right; }
   .page-header__logo {
-    text-align: center; }
+    text-align: right;
+    padding-right: 20px; }
     .page-header__logo img {
       width: 180px; }
 
@@ -66,7 +68,8 @@ picture {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-end; }
+    align-items: flex-end;
+    padding-top: 20px; }
   .presentation__name {
     width: 100%;
     font-size: 30px;
@@ -92,14 +95,18 @@ picture {
     font-size: 24px;
     text-align: left;
     margin-bottom: 20px; }
+  .info__column {
+    text-align: center; }
   .info__text {
     font-size: 14px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    text-align: left; }
   .info__advantages-list {
     font-size: 14px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    text-align: left; }
   .info__foto {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     display: flex;
     justify-content: center; }
 
@@ -163,7 +170,7 @@ picture {
     text-align: right;
     min-height: 80px;
     transition: 0.5s;
-    border: 1px solid #a5c6e0;
+    border-bottom: 1px solid #a5c6e0;
     color: white;
     display: block; }
     .main-nav__link:hover {
@@ -193,6 +200,66 @@ picture {
       transition: all 0.3s; }
   .main-nav__item--active {
     background-color: transparent; }
+  .main-nav__toggle {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    text-indent: -9999px;
+    box-shadow: none;
+    border: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    background-color: #000000;
+    left: 0px;
+    top: 0px; }
+    .main-nav__toggle span {
+      display: block;
+      position: absolute;
+      top: 24px;
+      left: 15px;
+      right: 15px;
+      height: 2px;
+      background-color: #ffffff;
+      transition: background-color 0.2s; }
+      .main-nav__toggle span::after, .main-nav__toggle span::before {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+        transition-duration: 0.2s, 0.2s;
+        transition-delay: 0.2s, 0s; }
+      .main-nav__toggle span::before {
+        top: -9px;
+        transition-property: top, -webkit-transform;
+        transition-property: top, transform;
+        transition-property: top, transform, -webkit-transform; }
+      .main-nav__toggle span::after {
+        bottom: -9px;
+        transition-property: bottom, -webkit-transform;
+        transition-property: bottom, transform;
+        transition-property: bottom, transform, -webkit-transform; }
+    .main-nav__toggle--active span {
+      background: none; }
+      .main-nav__toggle--active span::before {
+        top: 0;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        transition-delay: 0s, 0.2s; }
+      .main-nav__toggle--active span::after {
+        bottom: 0;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        transition-delay: 0s, 0.2s; }
 
 /*Обо мне и мои проекты*/
 .section-toggler {
@@ -208,7 +275,6 @@ picture {
     outline: none;
     padding: 20px 30px;
     background-color: white;
-    border: 1px solid black;
     color: black;
     transition: 0.8s;
     width: 100%;
@@ -233,7 +299,8 @@ picture {
   margin: 0 auto; }
   .list__item {
     min-height: 100px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    text-align: center; }
   .list__icon {
     width: 45px;
     height: 45px;
@@ -241,7 +308,7 @@ picture {
     color: #6d0000;
     opacity: 0.7;
     background-size: cover;
-    display: block; }
+    display: inline-block; }
     .list__icon--astronaut {
       background-image: url("../img/icons/astronaut.svg"); }
     .list__icon--study {
@@ -263,7 +330,8 @@ picture {
   text-transform: uppercase;
   padding: 20px;
   background-color: white;
-  border: 2px solid black; }
+  border: 2px solid black;
+  width: 80%; }
   .button:hover {
     background-color: black;
     color: white;
@@ -274,6 +342,33 @@ picture {
   .button:focus {
     background-color: black;
     color: #c5c5c5; }
+
+.button-up {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: fixed;
+  left: 30px;
+  bottom: 45px;
+  opacity: 0;
+  padding: 1px 0 0 0; }
+  .button-up__arrow {
+    border-color: transparent #000000 #000000 transparent;
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    padding: 3px;
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg); }
+  .button-up:hover, .button-up:active {
+    border-color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 0.3s; }
+    .button-up:hover .button-up__arrow, .button-up:active .button-up__arrow {
+      border-color: transparent #ffffff #ffffff transparent;
+      transition: 0.3s; }
 
 .social-links {
   text-align: center; }
@@ -348,7 +443,11 @@ picture {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        min-height: 80px; }
+        min-height: 80px;
+        text-align: left; }
+      .page-header__logo {
+        padding-right: 0px;
+        text-align: center; }
     .presentation {
       padding-top: 50px;
       background-image: url("../img/cuadros2.svg");
@@ -357,6 +456,8 @@ picture {
         width: 86%;
         max-width: 960px;
         margin: 0 auto; }
+      .presentation__wrapper {
+        padding-top: 40px; }
       .presentation__name {
         font-size: 40px;
         margin-bottom: 150px; }
@@ -380,20 +481,18 @@ picture {
         font-size: 30px;
         margin-bottom: 40px;
         flex-basis: 100%; }
-    .info__column {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: stretch;
-      align-content: stretch; }
+      .info__column {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch; }
       .info__text {
         font-size: 20px; }
       .info__advantages-list {
         font-size: 20px; }
-      .info__foto {
-        padding-left: 20px; }
     .projects {
       padding: 0;
       padding-top: 20px; }
@@ -440,8 +539,8 @@ picture {
         width: 100%;
         height: 100%;
         text-align: center; }
-    .main-nav__toggle {
-      display: none; }
+      .main-nav__toggle {
+        display: none; }
     .section-toggler {
       padding: 0;
       padding-top: 20px; }
@@ -463,6 +562,16 @@ picture {
         margin-bottom: 50px; }
     .button {
       font-size: 16px; }
+    .button-up {
+      border-width: 2px;
+      width: 45px;
+      height: 45px;
+      left: 30px;
+      bottom: 75px;
+      padding: 7px 0 0 0; }
+      .button-up__arrow {
+        padding: 4px;
+        border-width: 2px; }
       .modal__content {
         padding-top: 40px;
         font-size: 20px; }
@@ -528,6 +637,8 @@ picture {
         margin-bottom: 60px; }
     .button {
       font-size: 18px; }
+    .button-up {
+      left: 20px; }
       .modal__content {
         font-size: 24px; }
       .modal__header {
