@@ -1,3 +1,4 @@
+"use strict";
 document.addEventListener("DOMContentLoaded", function() {
     //добавление модального окна на "Моя биография поподробнее"
     const button = document.querySelector(".js-info-switcher");
@@ -97,11 +98,9 @@ document.addEventListener("DOMContentLoaded", function() {
             var topPos = $(this).scrollTop();
             if (topPos > viewportHeight) {
                 button.css("opacity", "1");
-
             } else {
                 button.css("opacity", "0");
             }
-
         });
 
         button.click(function () {

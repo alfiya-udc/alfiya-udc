@@ -1,0 +1,64 @@
+.project {
+    @media ($tablet-widths) {
+        padding: 0;
+        padding-top: 20px;
+    }
+
+    &__wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+        @media ($tablet-widths) {
+            padding: 0;
+            padding-top: 20px;
+            @include container;
+        }
+    }
+
+    &__title {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: block;
+        color: black;
+        font-weight: bold;
+        font-size: 22px;
+        text-align: left;
+        margin-bottom: 10px;
+        text-align: center;
+
+        @media ($tablet-widths) {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+    
+        @media ($desktop-widths) {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+    }
+    
+    &__description {
+        font-size: 14px;
+        margin-bottom: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        @media ($tablet-widths) {
+            font-size: 20px;
+        }
+    
+        @media ($desktop-widths) {
+            font-size: 24px;
+        }
+    }
+
+    &__image {
+        text-align: center;        
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        @media ($tablet-widths) {
+            width: 50%;
+        }
+        
+    }
+}
