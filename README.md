@@ -1,2 +1,2 @@
 # alfiya-udc
-Сайт-портфолио
+https://alfiya-udc.github.io/alfiya-udc/
