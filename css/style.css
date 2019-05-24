@@ -310,7 +310,8 @@ picture {
     font-weight: bold;
     cursor: pointer; }
     .section-toggler__button:hover {
-      background-color: #6abfbf;
+      background: black;
+      color: white;
       border: none; }
     .section-toggler__button--left {
       text-align: left; }
@@ -476,9 +477,7 @@ picture {
         padding-right: 0px;
         text-align: center; }
     .presentation {
-      padding-top: 50px;
-      background-image: url("../img/cuadros2.svg");
-      background-size: 8%; }
+      padding-top: 50px; }
       .presentation__wrapper {
         width: 86%;
         max-width: 960px;
