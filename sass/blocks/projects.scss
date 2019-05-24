@@ -45,6 +45,12 @@
         }
     }
     
+    &__link {
+        color: black;
+        &:hover {
+            background-color: #6abfbf;
+        }
+    }
     &__description {
         font-size: 14px;
         margin-bottom: 30px;

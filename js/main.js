@@ -75,16 +75,18 @@ document.addEventListener("DOMContentLoaded", function() {
     switchOffBurger("main-nav__toggle--active");
 
     /* Кнопка меню-бургера */
-    function toggleHandler(toggle, className) {
+    function toggleHandler(toggle, classNames) {
         toggle.addEventListener( "click", function(e) {
             e.preventDefault();
-            (this.classList.contains(className) === true) ? 
-            this.classList.remove(className) : 
-            this.classList.add(className);
+            classNames.forEach(className => {
+                (this.classList.contains(className) === true) ? 
+                    this.classList.remove(className) : 
+                    this.classList.add(className);
+            });
+            
         });
     }
-    toggleHandler(toggleBtn, "nav__toggle--active");
-    toggleHandler(toggleBtn, "main-nav__toggle--active");
+    toggleHandler(toggleBtn, ["nav__toggle--active", "main-nav__toggle--active"] );
 
     /*Кнопка вверх*/
     function handleScrollTop() {

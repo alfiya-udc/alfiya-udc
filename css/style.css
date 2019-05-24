@@ -127,6 +127,10 @@ picture {
     margin-bottom: 10px; }
     .projects__name-link:hover {
       background-color: #6abfbf; }
+  .projects__link {
+    color: black; }
+    .projects__link:hover {
+      background-color: #6abfbf; }
   .projects__description {
     font-size: 14px;
     margin-bottom: 30px;
