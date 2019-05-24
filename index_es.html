@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Front-end developer Alfiya</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="page-header__logo">
+        <a href="#">
+          <img alt="Альфиюшка" src="img/logo1.svg" width="180">
+        </a>
+      </div>
+      
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle js-toggle-button main-nav__toggle--active nav__toggle--active" type="button"><span></span></button>
+        
+        <ul class="main-nav__list js-toggle-menu">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link main-nav__link--active">
+              <span class="main-nav__text">Русский</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              <span class="main-nav__text">English</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+                <span class="main-nav__text">Español</span>
+              </a>
+          </li>
+        </ul>
+        
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="presentation">
+      <div class="presentation__wrapper">
+        <h1 class="presentation__name">Alfiya<br>Akhmetzyanova</h1>
+        <p class="presentation__object">
+          He hecho este sitio para mis empleadores potenciales. Aquí se puede encotrar información sobre mí, ejemplos de mi código y también los enlaces a los proyectos en los que participé. 
+        </p>
+      </div>
+    </section>
+
+    <section class="section-toggler">
+      <div class="section-toggler__wrapper" id="js-tabs">
+        <button class="section-toggler__button section-toggler__button--left section-toggler__button--active js-tab-header">
+          Mis destrezas técnicasÑ  
+        </button>
+        <button class="section-toggler__button section-toggler__button--right js-tab-header">
+          Mis proyectos     
+        </button>
+      </div>
+    </section>
+    
+    <section class="info js-tab-panel">
+      <div class="info__wrapper">
+        <article class="info__column">
+          
+          <dl class="info__advantages-list">
+            <dt>Sé bastante bienÑ</dt>
+              <dd>React/Redux, Javascript, HTML, CSS, Webpack</dd>
+            <dt>Sé un poco: </dt>
+              <dd>Си</dd>
+            <dt>He escuchado algo de: </dt>
+              <dd>Node.js., Stylus</dd>
+            <dt>Herramientas que utilizo en mi trabajo: </dt>
+              <dd>git, npm, Visual Code, Sass</dd>
+          </dl>
+
+          <p class="info__text">
+            Mi objetivo es obtener una posición de programadora Front-end en la empresa que a cambio de mi atención y mis conocimientos me va a proporcionar la atención similar y la recompensa.
+          </p>
+         
+        </article>
+
+        <article class="info__column">
+          <div class="info__foto">
+            <picture>
+              <source media="(min-width:1200px srcset='img/foto1200.jpg 1x, img/foto2400.jpg 2x')">
+              <source media="(min-width:768px srcset='img/foto0800.jpg 1x, img/foto1800.jpg 2x')">
+              <img alt="Моя фотка" src="img/foto0400.jpg" srcset="img/foto0800.jpg 2x">
+            </picture>
+          </div>
+          <button class="button js-info-switcher">
+            Mi biografía en más detalles
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects js-tab-panel">
+      
+      <div class="projects__wrapper">
+        <ul class="projects__list">
+          <li class="projects__item">
+            <a target="_blank" class="projects__name-link" href="https://github.com/alfiya-udc/react-2019-01-11">Proyecto de estudio de los cursos de React</a>
+            <p class="projects__description">Hemos realizado este proyecto con la ayuda del tutor. Después de cada clase regularmente hacía toda la tarea. Ha sido un curso muy útil y él me ha explicado mucho en React.</p>
+          </li>
+          <li class="projects__item">
+            <a target="_blank" class="projects__name-link" href="https://github.com/alfiya-udc/js_20171116">Proyecto de estudio de los cursos de Javascript</a>
+            <p class="projects__description">El objetivo era crear una aplicación web (chat). El proyecto no era mi personal, fue hecho por un grupo, o más bien, por el profesor, y solo a veces solicitábamos pull requests a su repositorio.</p>
+          </li>
+          <li class="projects__item">
+            <a target="_blank" class="projects__name-link" href="https://github.com/alfiya-udc/Dynamic-search-films">Búsqueda por películas (en ruso)</a>
+            <p class="projects__description">La aplicación está en JS vanilla. Usándola se puede acceder a la lista con películas, buscar en ella, filtrar por etiquetas, añadir las películas en favoritos. Fue una tarea de prueba para la empresa "Taksnet" (Kazán). Ahora mis conocimientos son más profundos y lo habría implementado de manera diferente, pero incluso así se ve claramento que manejo el código con cuidado.</p>
+            <p class="projects__description"><a target="_blank" class="projects__link" href="https://alfiya-udc.github.io/Static-search-films/">Здесь</a> можно посмотреть, как оно работает в статичном виде.</p>
+          </li>
+          <li class="projects__item">
+            <a target="_blank" class="projects__name-link" href="https://github.com/alfiya-udc/Masque-text-transform">Búsqueda y marcación de un fragmento de texto por una máscara (proyecto mini de entrenamiento)</a>
+            <p class="projects__description">Hay una cadena y dos máscaras en el formato de expresiones regulares. Se require transformar la cadena original así que las coincidencias por la primera máscara se marquen en cursiva y por la secunda - en negrita. Había que tener en cuenta las cruces posibles de los fragmentos encontrados.</p>
+          </li>
+          <li class="projects__item">
+            <a target="_blank" class="projects__name-link" href="https://github.com/alfiya-udc/Arrange-Box">Arrange box (proyecto mini de entrenamiento)</a>
+          </li>
+          <li class="projects__item">
+            <a target="_blank" class="projects__name-link" href="https://github.com/alfiya-udc/test-one-page">Ejemplo de una página Web estilizada (proyecto mini de entrenamiento)</a>
+            <p class="projects__description">Este ejemplo simple muestra como suelo nombrar las clases y organizarlos en los estilos (según la metodología Bloc - Elemento - Modificador)</p>
+          </li>
+          <li class="projects__item">
+            <a target="_blank" class="projects__name-link" href="armenia.html">Sitio web de los jóvenes armenios de Krasnoyarsk</a>
+            <p class="projects__description">Front-end clásico con el uso de la tecnologías así como: Stylus, JQuery, Lightgallery, BX Slider, CSS Grid.</p>
+          </li>
+          <li class="projects__item">
+            <a target="_blank" class="projects__name-link" href="https://github.com/alfiya-udc/alfiya-udc">Sitio-portafolio</a>
+            <p class="projects__description">Собственно сайт, на котором вы сейчас находитесь, тоже сделан мной. На гитхабе есть его код.</p>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="modal">
+        <div class="modal__content">
+          <span class="modal__close">&times;</span>
+          <h2 class="modal__header">Моя биография поподробнее</h2>
+          <article class="modal__info">
+            <p class="modal__paragraph">У меня филологическое прошлое, училась в МГУ и КФУ, хорошо владею испанским языком, английским - на среднем уровне. До 2017 года я преподавала испанский язык и с 2016 года решила перейти в сферу IT.
+            </p>
+            <p class="modal__paragraph">С 2016 по 2019 годы училась на следующих курсах официально, с сертификатами и наставниками, как положено: </p>
+            <ul class="modal__list">
+              <li>Основы программирования ("Специалист")</li>
+              <li>Программирование на Си ("Специалист")</li>
+              <li>Javascript. DOM. Интерфейсы (javascript.ru)</li>
+              <li>Курс по React (javascript.ru) - это лучший курс из всех, что я прошла.</li>
+            </ul>                       
+            <p class="modal__paragraph">
+              Параллельно я самостоятельно изучила HTML, CSS и базовые алгоритмы.<br>
+              Имею некоторое представление о Node.js, Gulp.<br>
+            </p>
+            <p class="modal__paragraph">
+              С октября 2018 года по настоящее время я работаю в компании "Такснет". Моя команда работает над редактором документов электронной отчетности в виде SPA<br>
+              Имею некоторое представление о Node.js, Gulp.<br>
+            </p>
+            <p class="modal__paragraph">
+              В свободное время я читаю, уже не художественную литературу, а больше публицистику, чтобы быть в курсе всего, что происходит. Мне нравится фотографировать, петь и программировать. Пока я не нашла работу, это мое основное хобби. Я в совершенстве владею испанским языком, английским же не так круто, но достаточно для чтения документации.
+            </p>   
+          </article>
+        </div>
+
+    </section>
+
+
+    <section class="skills">
+      <div class="skills__wrapper">
+        <h2 class="skills__header">
+          Что точно можно от меня ожидать
+        </h2>
+        <ul class="skills__list list">
+          <li class="list__item">
+            <i class="list__icon--astronaut list__icon"></i>
+            <p class="list__text">Люблю всё новое и интересное</p>
+          </li>
+
+          <li class="list__item">
+            <i class="list__icon--study list__icon"></i>
+            <p class="list__text">Обучаюсь глубоко и вдумчиво</p>
+          </li>
+
+          <li class="list__item ">
+            <i class="list__icon--heart list__icon"></i>
+            <p class="list__text">Люблю Javascript</p>
+          </li>
+
+          <li class="list__item">
+            <i class="list__icon--yin-yang list__icon"></i>
+            <p class="list__text">Упрощаю и оптимизирую</p>
+          </li>
+
+          <li class="list__item">
+            <i class="list__icon--tasks list__icon"></i>
+            <p class="list__text">Суперответственная</p>
+          </li>
+
+          <li class="list__item">
+              <i class="list__icon--baby list__icon"></i>
+              <p class="list__text">И немного весёлая ;)</p>
+          </li>
+        </ul>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <p class="page-footer__social">
+        <span class="social-links">
+          <a class="social-icon social-icon--gh" href="https://github.com/alfiya-udc" target="_blank" >Github</a>
+          <a class="social-icon social-icon--fb" href="https://www.facebook.com/fiyusha" target="_blank" >Fb</a>
+          <a class="social-icon social-icon--vk" href="https://vk.com/algounico"  target="_blank">Vk</a>
+          <a class="social-icon social-icon--in" href="https://www.instagram.com/larunablanca/" target="_blank">Insta</a>
+        </span>
+      </p>
+    </div>
+  </footer>
+  <button class="button-up js-scroll-top">
+    <span class="button-up__arrow"></span>
+  </button> 
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
