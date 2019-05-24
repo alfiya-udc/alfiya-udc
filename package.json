@@ -20,7 +20,7 @@
   "homepage": "https://github.com/alfiya-udc/alfiya-udc#readme",
   "devDependencies": {
     "autoprefixer": "^8.4.1",
-    "browser-sync": "^2.23.7",
+    "browser-sync": "^2.26.5",
     "css-mqpacker": "^6.0.2",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
