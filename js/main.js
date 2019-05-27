@@ -1,6 +1,8 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", function() {
-    //добавление модального окна на "Моя биография поподробнее"
+    
+    /* Добавление модального окна на "Моя биография поподробнее" */
+
     const button = document.querySelector(".js-info-switcher");
     const modalWindow = document.querySelector (".modal");
     const closeButton = document.querySelector(".modal__close");
@@ -23,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
     closeButton.addEventListener("click", hideModal);
     window.addEventListener("click", removeModalFromWindow);
 
-    //Табы на "Обо мне" и "Мои проекты"
+    /* Табы на "Обо мне" и "Мои проекты" */
 
     const tabsContainer = document.getElementById("js-tabs");
 

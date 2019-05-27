@@ -10,21 +10,17 @@ var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var del = require("del");
-var run = require("run-sequence");
 
+gulp.task("clean", function() {
+    return del("build");
+});
 
 gulp.task("sass", function(){
-    gulp.src("sass/style.scss")
+    return gulp.src("sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
-        autoprefixer({browsers: [
-        "last 1 version",
-        "last 2 Chrome versions",
-        "last 2 Firefox versions",
-        "last 2 Opera versions",
-        "last 2 Edge versions"
-        ]}),
+        autoprefixer(),
         mqpacker({
             sort: true
         })
@@ -44,21 +40,6 @@ gulp.task("images", function() {
         ]))
         .pipe(gulp.dest("img"));
 });
-
-gulp.task("serve", ["sass"], function () {
-    server.init({
-        server: "."
-    });
-
-    gulp.watch("sass/**/*.scss", ["sass"]);
-    gulp.watch("*.html")
-        .on("change", server.reload);
-});
-
-gulp.task("build", function(fn) {
-    run("sass", "images", fn);
-});
-
 gulp.task("copy", function() {
     return gulp.src([
         "fonts/**/*.{woff,woff2}",
@@ -70,8 +51,32 @@ gulp.task("copy", function() {
     })
     .pipe(gulp.dest("build"));
 });
+gulp.task("serve", function () {
+    server.init({
+        server: ".",
+        notify: false,
+        open: true,
+        cors: true,
+        ui: false
+    });
 
-gulp.task("clean", function() {
-    return del("build");
+    gulp.watch("sass/**/*.scss", gulp.series("sass"));
+    gulp.watch("*.html", gulp.series("refresh"));
 });
 
+gulp.task("refresh", function (done) {
+    server.reload();
+    done();
+  });
+
+gulp.task("build", gulp.series(
+    "clean",
+    "copy",
+    "sass",
+  ));
+
+
+
+
+
+gulp.task("start", gulp.series("build", "serve"));
