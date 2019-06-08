@@ -21,7 +21,7 @@
   "homepage": "https://github.com/alfiya-udc/alfiya-udc#readme",
   "devDependencies": {
     "autoprefixer": "^8.4.1",
-    "browser-sync": "^2.26.5",
+    "browser-sync": "^2.26.7",
     "css-mqpacker": "^6.0.2",
     "del": "^3.0.0",
     "gulp": "^4.0.2",
