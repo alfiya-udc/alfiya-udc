@@ -20,16 +20,16 @@
   },
   "homepage": "https://github.com/alfiya-udc/alfiya-udc#readme",
   "devDependencies": {
-    "autoprefixer": "^8.4.1",
+    "autoprefixer": "^8.6.5",
     "browser-sync": "^2.26.7",
     "css-mqpacker": "^6.0.2",
     "del": "^3.0.0",
     "gulp": "^4.0.2",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^5.0.3",
-    "gulp-plumber": "^1.2.0",
+    "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^7.0.1",
-    "gulp-rename": "^1.2.2",
+    "gulp-rename": "^1.4.0",
     "gulp-sass": "^3.2.1",
     "run-sequence": "^2.2.1"
   }
