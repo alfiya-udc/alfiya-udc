@@ -25,22 +25,23 @@
         z-index: 5000;
         background-color: white;
         margin: 15% auto;
-        padding: 20px;
-        width: 80%;
         height: auto;
         line-height: 1.5;
         padding: 20px;
         padding-top: 40px;
-        font-size: 14px;
+        font-size: 18px;
         
-        @media ($desktop-widths) {
-            font-size: 24px;
-        }
-
         @media ($tablet-widths) {
             padding-top: 40px;
-            font-size: 20px;
+            font-size: 22px;
+            width: 80%;
+            padding: 30px;       
         }
+
+        @media ($desktop-widths) {
+            font-size: 26px;
+        }
+       
     }
 
     &__header {

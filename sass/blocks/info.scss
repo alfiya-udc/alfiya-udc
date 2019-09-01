@@ -52,28 +52,28 @@
     }
 
     &__text {
-        font-size: 14px;
+        font-size: 18px;
         margin-bottom: 30px;
         text-align: left;
         @media ($tablet-widths) {
-            font-size: 20px;
+            font-size: 22px;
         }
     
         @media ($desktop-widths) {
-            font-size: 24px;
+            font-size: 26px;
         }
     }
 
     &__advantages-list {
-        font-size: 14px;
+        font-size: 18px;
         margin-bottom: 30px;
         text-align: left;
         @media ($tablet-widths) {
-            font-size: 20px;
+            font-size: 22px;
         }
     
         @media ($desktop-widths) {
-            font-size: 24px;
+            font-size: 26px;
         }
     }
 

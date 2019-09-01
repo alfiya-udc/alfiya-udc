@@ -47,20 +47,20 @@
 
     &__object {
         max-width: 550px;
-        font-size: 16px;
+        font-size: 18px;
         text-align: right;
         margin-bottom: 45px;        
         padding-left: 20px;
         padding-right: 20px;
 
         @media ($tablet-widths) {
-            font-size: 20px;
+            font-size: 22px;
             margin-bottom: 60px;
             width: 60%;
         }
     
         @media ($desktop-widths) {
-            font-size: 24px;
+            font-size: 26px;
             margin-bottom: 75px;
         }
     }

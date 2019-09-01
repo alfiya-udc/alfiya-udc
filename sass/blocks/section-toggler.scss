@@ -30,7 +30,11 @@
         font-size: 18px;
         font-weight: bold;
         cursor: pointer;
-        
+
+        @media ($tablet-widths) {
+            font-size: 22px;
+        }
+
         &:hover {
             background: black;
             color: white;

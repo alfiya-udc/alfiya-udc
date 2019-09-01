@@ -78,7 +78,7 @@ picture {
     margin-bottom: 70px; }
   .presentation__object {
     max-width: 550px;
-    font-size: 16px;
+    font-size: 18px;
     text-align: right;
     margin-bottom: 45px;
     padding-left: 20px;
@@ -98,11 +98,11 @@ picture {
   .info__column {
     text-align: center; }
   .info__text {
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 30px;
     text-align: left; }
   .info__advantages-list {
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 30px;
     text-align: left; }
   .info__foto {
@@ -132,7 +132,8 @@ picture {
     .projects__link:hover {
       background-color: #6abfbf; }
   .projects__description {
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 150%;
     margin-bottom: 30px;
     padding: 15px; }
 
@@ -196,7 +197,7 @@ picture {
     padding: 20px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 30px;
     text-align: right;
     min-height: 80px;
@@ -363,7 +364,9 @@ picture {
   padding: 20px;
   background-color: white;
   border: 2px solid black;
-  width: 80%; }
+  width: 80%;
+  font-size: 16px;
+  line-height: 150%; }
   .button:hover {
     background-color: black;
     color: white;
@@ -382,7 +385,7 @@ picture {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.4);
   position: fixed;
-  left: 30px;
+  left: 20px;
   bottom: 45px;
   opacity: 0;
   padding: 1px 0 0 0; }
@@ -449,13 +452,11 @@ picture {
     z-index: 5000;
     background-color: white;
     margin: 15% auto;
-    padding: 20px;
-    width: 80%;
     height: auto;
     line-height: 1.5;
     padding: 20px;
     padding-top: 40px;
-    font-size: 14px; }
+    font-size: 18px; }
   .modal__header {
     margin-bottom: 20px;
     font-size: 24px;
@@ -492,7 +493,7 @@ picture {
         font-size: 40px;
         margin-bottom: 150px; }
       .presentation__object {
-        font-size: 20px;
+        font-size: 22px;
         margin-bottom: 60px;
         width: 60%; }
     .info {
@@ -520,9 +521,9 @@ picture {
         align-items: center;
         align-content: stretch; }
       .info__text {
-        font-size: 20px; }
+        font-size: 22px; }
       .info__advantages-list {
-        font-size: 20px; }
+        font-size: 22px; }
     .projects {
       padding: 0;
       padding-top: 20px; }
@@ -534,7 +535,7 @@ picture {
         font-size: 28px;
         margin-bottom: 20px; }
       .projects__description {
-        font-size: 20px; }
+        font-size: 22px; }
   .project {
     padding: 0;
     padding-top: 20px; }
@@ -559,7 +560,7 @@ picture {
         width: auto; }
       .skills__header {
         font-size: 30px;
-        margin-bottom: 40px; }
+        margin-bottom: 50px; }
       .page-footer__wrapper {
         padding: 0;
         padding-top: 30px; }
@@ -594,6 +595,8 @@ picture {
         margin: 0 auto; }
       .section-toggler__wrapper {
         flex-direction: row; }
+      .section-toggler__button {
+        font-size: 22px; }
         .section-toggler__button--active {
           order: 0; }
     .list {
@@ -618,7 +621,9 @@ picture {
         border-width: 2px; }
       .modal__content {
         padding-top: 40px;
-        font-size: 20px; }
+        font-size: 22px;
+        width: 80%;
+        padding: 30px; }
       .modal__header {
         font-size: 30px;
         margin-bottom: 40px; } }
@@ -652,7 +657,7 @@ picture {
         font-size: 50px;
         margin-bottom: 180px; }
       .presentation__object {
-        font-size: 24px;
+        font-size: 26px;
         margin-bottom: 75px; }
       .info__wrapper {
         width: 91%;
@@ -662,14 +667,14 @@ picture {
         font-size: 36px;
         margin-bottom: 50px; }
       .info__text {
-        font-size: 24px; }
+        font-size: 26px; }
       .info__advantages-list {
-        font-size: 24px; }
+        font-size: 26px; }
       .projects__name-link {
         font-size: 32px;
         margin-bottom: 30px; }
       .projects__description {
-        font-size: 24px; }
+        font-size: 26px; }
     .project__title {
       font-size: 32px;
       margin-bottom: 30px; }
@@ -679,7 +684,7 @@ picture {
         padding-top: 130px; }
       .skills__header {
         font-size: 36px;
-        margin-bottom: 50px; }
+        margin-bottom: 70px; }
       .section-toggler__wrapper {
         width: 91%;
         max-width: 1050px;
@@ -693,7 +698,7 @@ picture {
     .button-up {
       left: 20px; }
       .modal__content {
-        font-size: 24px; }
+        font-size: 26px; }
       .modal__header {
         font-size: 36px;
         margin-bottom: 50px; } }
